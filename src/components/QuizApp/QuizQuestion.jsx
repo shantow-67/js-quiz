@@ -32,14 +32,14 @@ const QuizQuestion = ({ question, options, correctAnswer }) => {
             onClick={() => handleAnswerSelection(index, correctAnswer)}
             disabled={isAnswered}
           >
-            <div className="flex items-center w-full">
-              <span className="mr-2">{String.fromCharCode(65 + index)}.</span>
-              <span className="flex-1">{option}</span>
+            <div className="flex items-start w-full">
+              <span className="mr-2 flex-shrink-0">{String.fromCharCode(65 + index)}.</span>
+              <span className="flex-1 break-words whitespace-normal">{option}</span>
               {isAnswered && index === correctAnswer && (
-                <CheckCircle2 className="h-5 w-5 text-green-500 ml-2" />
+                <CheckCircle2 className="h-5 w-5 text-green-500 ml-2 flex-shrink-0" />
               )}
               {isAnswered && selectedOption === index && index !== correctAnswer && (
-                <XCircle className="h-5 w-5 text-red-500 ml-2" />
+                <XCircle className="h-5 w-5 text-red-500 ml-2 flex-shrink-0" />
               )}
             </div>
           </Button>

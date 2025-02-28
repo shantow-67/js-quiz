@@ -1,7 +1,7 @@
 # Simple Quiz App
 
-##Tech
+## Tech
 
--React
--Zustand
--Tailwind
+- React
+- Zustand
+- Tailwind
